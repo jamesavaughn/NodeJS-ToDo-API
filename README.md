@@ -67,12 +67,13 @@ you can change the ObjectId by setting that property if you need to
 
         }, (err) => {
             console.log('Unable to fetch todos', err); //logs error object and prints to condole
-        });`
+        });
 
-// queries based on certain values
+** queries based on certain values **
+** query based on ObjectID because we deconstructed the mongodb object **
 
- db.collection('Todos').find({
-            _id: new ObjectID('59d689be1a906972ba207f56') //can query based on ObjectID because we deconstructed the mongodb object
+ `db.collection('Todos').find({
+            _id: new ObjectID('59d689be1a906972ba207f56') 
         }).toArray().then((docs) => {
             console.log('Todos');
             console.log(JSON.stringify(docs, undefined, 2));
