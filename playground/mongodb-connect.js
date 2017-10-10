@@ -33,7 +33,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     //     console.log(result.ops[0]._id.getTimestamp()); //.ops will show all records inserted ._id will show the id in the terminal and .getTimeStamp()) will show time
         // console.log(JSON.stringify(result.ops[0]._id.getTimeStamp(), undefined, 2)); //.ops show all records that were inserted into the database
          
-    });
+   // });
 
     db.close(); //closes the connection
 }); 
