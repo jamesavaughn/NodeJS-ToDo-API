@@ -23,10 +23,17 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     // });
     
     //findOneAndDelete -- returns and deletes value so you can tell the user what was deleted
-    db.collection('Todos').findOneAndDelete({
-        completed: false
-    }).then((result) => {
-        console.log(result);
-    });
+    // db.collection('Todos').findOneAndDelete({
+    //     completed: false
+    // }).then((result) => {
+    //     console.log(result);
+    // });
+    db.collection('Users').deleteMany({name: 'Andrew'});
+
+    db.collection('Users').findOneAndDelete({
+        _id: new ObjectID("59d67b99a238ad6e23a05b4f")
+    }).then((results) => {
+        console.log(JSON.stringify(results, undefined,2));
+    })
     //db.close(); //closes the connection
 }); 
