@@ -3,6 +3,12 @@
 ## Description ##
 
 Sample node test cases using assertion modules.
+Scrips for CRUD Operations
+C: Create documents
+R: Remove documents
+U: Update documents
+D: Delete documents
+
 
 ## Functionality ##
 
