@@ -104,25 +104,29 @@ mongodb.github.io/ documentation for toArrayResultsCallback
 
 ### package.json modifications ###
 `"scripts": {
+
     "test": "mocha server/**/*.test.js",
+
     "test-watch": "nodemon --exec 'npm test'"`
 
 1) Verifies that todo was created correctly
-`//load test libraries
-const expect = require('expect');
-const request = require('supertest');
 
-//load local libraries
-const {app} = require('./../server');
-const {Todo} = require('./../models/todo');
+# load test libraries #
 
-//clears out database
-beforeEach((done) => {
+`const expect = require('expect');
+const request = require('supertest');`
+
+# load local libraries #
+`const {app} = require('./../server');
+const {Todo} = require('./../models/todo');`
+
+# clears out database #
+`beforeEach((done) => {
     Todo.remove({}).then(() => done());
-});
+});`
 
-//describe block
-describe('POST /todos', () => {
+# describe block #
+`describe('POST /todos', () => {
     it('should create a new todo', (done) => {
         var text = 'Test todo text';
 
