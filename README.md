@@ -30,6 +30,10 @@ D: Delete documents
 * Inserting documents
 * Fetching Data
 * Object destructuring
+* Express module
+* Body Parser module
+* Validators
+* Rest APIs
 
 ## Details ##
 Getting started with MongoDB is quick and simple. Follow these steps to get going.
