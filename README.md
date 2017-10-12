@@ -62,15 +62,25 @@ Tip: Download the npm library and connect to the database MongoDB NPN library
 const port = process.env.port || 3000; `
 
 `app.listen(port, () =>{
-    console.log(`started at port ${port}port 3000`);
+    console.log('started at port ${port}port 3000');
 });`
 
 2) Add start script to package.json file
 `    "start": "node server/server.js",`
 
-3) Specify engine version
+3) Specify engine version in package.json file
 `"engines": {
     "node": "6.2.2."`
+
+4) Create Heroku app 
+`heroku create`
+
+5) Add mongodb add-on
+`heroku addons:create mongolab:sandbox`
+
+6) Connect to Heroku database
+`mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp');`
+
 
 ## SQL vs. No SQL ##
 
