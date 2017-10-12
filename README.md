@@ -53,19 +53,19 @@ Getting started with MongoDB is quick and simple. Follow these steps to get goin
 Tip: Download RoboMongo a GUI for managing MongoDB!
 
 Tip: Download the npm library and connect to the database MongoDB NPN library
+`$ npm install mongodb --save`
 
-$ npm install mongodb --save
+## SQL vs. No SQL ##
 
-SQL vs. No SQL
-Database = Database
-Table = Collection
-Row/Record = Document { }
-Column =  Field
+* Database = Database
+* Table = Collection
+* Row/Record = Document { }
+* Column =  Field
 
 Note: Documents in NoSQL don't don't need to be the same
 
 
-** Unique Object Id **
+## Unique Object Id ##
 
 - 12 byte value
 - timestamp (4 bytes)
