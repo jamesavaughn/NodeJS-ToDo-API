@@ -78,7 +78,7 @@ const port = process.env.port || 3000; `
 5) Add mongodb add-on
 `heroku addons:create mongolab:sandbox`
 
-6) Connect to Heroku database
+6) Connect to Heroku database inside mongoose.js file
 `mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp');`
 
 
