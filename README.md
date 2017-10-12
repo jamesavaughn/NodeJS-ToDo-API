@@ -40,15 +40,16 @@ D: Delete documents
 ## Details ##
 Getting started with MongoDB is quick and simple. Follow these steps to get going.
 
-Swing by https://www.mongodb.com/ to download the latest version compatible with your operating system
-Make a directory mkdir mongo in your terminal
-Unzip the archive into this directory
-Make a directory for your MongoDB data mkdir mongo-data
-Navigate to mongo/bin
-Start the MongoDB server and set path to data $ ./mongod --dbpath ~/mongo-data   >> "waiting for connections on port 27017"
-Open a second terminal in the same directory
-Run MongoDB shell $ ./mongo  >> MongoDB shell version v3.4.9connecting to: mongodb://127.0.0.1:27017MongoDB server version: 3.4.9Welcome to the MongoDB shell.For interactive help, type "help".
-Start experimenting with some db.Todos( ) functions
+1. Swing by https://www.mongodb.com/ to download the latest version compatible with your operating system
+2. Make a directory mkdir mongo in your terminal
+3. Unzip the archive into this directory
+4. Make a directory for your MongoDB data `mkdir mongo-data`
+5. Navigate to mongo/bin
+6. Start the MongoDB server and set path to data `$ ./mongod --dbpath ~/mongo-data`   >> "waiting for connections on port 27017"
+7. Open a second terminal in the same directory
+8. Run MongoDB shell $ ./mongo  >> MongoDB shell version v3.4.9connecting to: mongodb://127.0.0.1:27017MongoDB server version: 3.4.9 Welcome to the MongoDB shell.For interactive help, type "help".
+9. Start experimenting with some db.Todos( ) functions
+
 Tip: Download RoboMongo a GUI for managing MongoDB!
 
 Tip: Download the npm library and connect to the database MongoDB NPN library
