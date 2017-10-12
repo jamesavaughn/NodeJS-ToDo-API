@@ -20,7 +20,7 @@ D: Delete documents
 ` $ npm run test-watch `
 
 
-## Key Concepts ## 
+## Key Concepts & Topics ## 
 
 * MongoDB installation and setup
 * MongoDB server connections
@@ -35,6 +35,7 @@ D: Delete documents
 * Validators
 * Rest APIs
 * Testing (`npm install expect mocha nodemon supertest --save-dev`)
+* Heroku
 
 ## Details ##
 Getting started with MongoDB is quick and simple. Follow these steps to get going.
@@ -100,7 +101,7 @@ you can change the ObjectId by setting that property if you need to
 mongodb.github.io/ documentation for toArrayResultsCallback
 
 
-## Test Cases ##
+## Test Cases Example ##
 
 ### package.json modifications ###
 `"scripts": {
@@ -152,5 +153,3 @@ const {Todo} = require('./../models/todo');`
 
     });
 });`
-
-2) verify that a todo is not created with bad data
