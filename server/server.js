@@ -15,7 +15,7 @@ var {User} = require('./models/user');
 var app = express();
 
 //set Heroku port or local port
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 //set middleware to send json to express application
 app.use(bodyParser.json());
