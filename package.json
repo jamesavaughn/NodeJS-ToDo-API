@@ -4,8 +4,14 @@
   "description": "MongoDB API",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "mocha server/**/*.test.js",
     "test-watch": "nodemon --exec 'npm test'"
+  },
+  "engines": {
+    "node": "6.2.2."
+  },
+  
   },
   "author": "James Vaughn",
   "license": "ISC",

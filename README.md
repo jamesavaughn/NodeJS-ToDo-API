@@ -55,6 +55,23 @@ Tip: Download RoboMongo a GUI for managing MongoDB!
 Tip: Download the npm library and connect to the database MongoDB NPN library
 `$ npm install mongodb --save`
 
+## Steps to Deploying on Huoku ##
+
+1) Set up port in server.js file
+`//set Heroku port or local port
+const port = process.env.port || 3000; `
+
+`app.listen(port, () =>{
+    console.log(`started at port ${port}port 3000`);
+});`
+
+2) Add start script to package.json file
+`    "start": "node server/server.js",`
+
+3) Specify engine version
+`"engines": {
+    "node": "6.2.2."`
+
 ## SQL vs. No SQL ##
 
 * Database = Database
